@@ -4,7 +4,9 @@ var nam = prompt("Please enter your name")
 alert(nam);
 var letters = [];
 var consonants = [];
-joint (nam)
+joint (nam);
+alert(letters);
+alert(consonants);
 function joint(x) {
   for (let i = 0; i < x.length; i++) {
     const element = x[i];
@@ -21,7 +23,5 @@ function joint(x) {
     }
   }
   letters = letters.sort();
-  consonants = consonants.sort();
-  alert(letters);
-  alert(consonants);
+  consonants = consonants.sort(); 
 }
