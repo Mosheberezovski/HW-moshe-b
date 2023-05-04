@@ -1,12 +1,9 @@
-var nam = prompt("Please enter your name")
-  .replace(/[^a-zA-Z]/g, "")
-  .split("");
-alert(nam);
+var nam = prompt("Please enter your name").toLowerCase().replace(/[^a-zA-Z]/g, "").split("");
 var letters = [];
 var consonants = [];
 joint (nam);
-alert(letters);
-alert(consonants);
+a=Textthread (consonants,letters);
+alert (a);
 function joint(x) {
   for (let i = 0; i < x.length; i++) {
     const element = x[i];
@@ -24,4 +21,9 @@ function joint(x) {
   }
   letters = letters.sort();
   consonants = consonants.sort(); 
+  return (letters,consonants);
+}
+function Textthread(y,z) {
+  var text= `Your string contains the following vowels: ${y} And the following consonants: ${z}`;
+  return (text);
 }
